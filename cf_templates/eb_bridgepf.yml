@@ -985,7 +985,7 @@ Resources:
     Type: 'AWS::ElastiCache::SecurityGroupIngress'
     DependsOn:
       - AWSECacheSecurityGroup
-      - AWSLBSecurityGroup
+      - AWSEC2SecurityGroup
     Properties:
       CacheSecurityGroupName: !Ref AWSECacheSecurityGroup
       EC2SecurityGroupName: !Join
